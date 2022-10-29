@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess how many fingers</title>
+
+
+    <style>
+        .main {
+            width: 60%;
+            height: 500px;
+            margin: 10% auto;
+            background-image: linear-gradient(45deg, powderblue, pink);
+            text-align: center;
+            padding: 5px;
+        }
+
+        .main h1 {
+            font-size: 30px;
+            text-decoration: double;
+        }
+
+        .main input {
+            width: 300px;
+            height: 35px;
+            margin: 30px;
+        }
+
+        .main button {
+            margin: 20px;
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+            background-image: linear-gradient(30deg, rgb(223, 120, 168), rgb(108, 224, 176));
+            border: none;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(76, 9, 9);
+        }
+
+        .main button:hover {
+            background-image: linear-gradient(30deg, rgb(108, 224, 176), rgb(161, 116, 176));
+        }
+
+        .main p {
+            font-size: 25px;
+            visibility: hidden;
+        }
+
+        .main #tryagain {
+            margin: 15px;
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+            background-image: linear-gradient(30deg, rgb(223, 120, 168), rgb(108, 224, 176));
+            border: none;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(76, 9, 9);
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <h1>
+            Guess the number from 1 to 6
+        </h1>
+
+        <input type="number" id="input" required><br>
+        <button id="click">Guess</button>
+
+        <p id="message"></p>
+
+        <button id="tryagain">Refresh</button>
+    </div>
+
+    <script src="guess.js"></script>
+
+</body>
+
+</html>
