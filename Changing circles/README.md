@@ -3,9 +3,12 @@ This is a simple game where one can chnage the circles by clicking, double click
 
 ## Output
 
-![image](https://user-images.githubusercontent.com/72090409/198814417-f53c211a-1771-44e7-a711-91dfdfb548bb.png)
-![image](https://user-images.githubusercontent.com/72090409/198814446-058d2727-61d1-49c5-bae1-809c68f0f21d.png)
+![image](https://user-images.githubusercontent.com/72090409/198834794-e0f02ae7-a3c3-4f9a-a236-1bc1e05e39a7.png)
+
+![image](https://user-images.githubusercontent.com/72090409/198834818-5d844227-ef3e-4b2d-984d-dd8e3ce6195d.png)
 
 
-https://user-images.githubusercontent.com/72090409/198814546-a73b4301-c154-4b71-9171-8ddc2b1d32b3.mp4
+
+
+https://user-images.githubusercontent.com/72090409/198834913-80dc5143-6bd4-4f69-968a-c7259cf0c028.mp4
 
