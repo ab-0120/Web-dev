@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissappearing Circles </title>
+
+    <style>
+        #circle1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: red;
+            margin: 45px auto;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+
+            font-size: 20px;
+            color: white;
+        }
+
+        #circle2 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 45px auto;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+
+            font-size: 20px;
+            color: white;
+        }
+
+        #circle3 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: blue;
+            margin: 45px auto;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="circle1">Mouse in</div>
+
+    <div id="circle2">Click me</div>
+    <div id="circle3">Hover in</div>
+
+    <script type="text/javascript">
+        // document.getElementById("circle1").addEventListener("click", () => {
+        //     document.getElementById("circle1").style.backgroundColor = "yellow";
+        //     document.getElementById("circle1").style.borderRadius = "10px";
+        // });
+
+        document.getElementById("circle1").onmouseenter = function () {
+            document.getElementById("circle1").style.backgroundColor = "powderblue";
+            document.getElementById("circle1").style.borderRadius = "50px";
+            document.getElementById("circle1").style.transform = 'rotate(45deg)';
+            document.getElementById("circle1").style.lineHeight = '200px';
+            document.getElementById("circle1").innerHTML = 'Mouse Out';
+        }
+
+        document.getElementById("circle1").onmouseleave = function () {
+            document.getElementById("circle1").style.backgroundColor = "red";
+            document.getElementById("circle1").style.borderRadius = "50%";
+            document.getElementById("circle1").style.transform = 'rotate(0deg)';
+            document.getElementById("circle1").innerHTML = 'Mouse In';
+        }
+
+
+        ///
+
+
+        document.getElementById("circle2").onclick = function () {
+            document.getElementById("circle2").style.backgroundColor = "teal";
+            document.getElementById("circle2").style.borderRadius = "10px";
+            document.getElementById("circle2").style.height = '30px';
+            document.getElementById("circle2").style.lineHeight = '30px';
+            document.getElementById("circle2").innerHTML = 'Double click me';
+        }
+
+        document.getElementById("circle2").ondblclick = function () {
+            document.getElementById("circle2").style.backgroundColor = "green";
+            document.getElementById("circle2").style.borderRadius = "50%";
+            document.getElementById("circle2").style.height = '200px';
+            document.getElementById("circle2").style.lineHeight = '200px';
+            document.getElementById("circle2").innerHTML = 'Click me';
+        }
+
+        //
+
+        document.getElementById("circle3").onpointerover = function () {
+            document.getElementById("circle3").style.backgroundColor = "plum";
+            document.getElementById("circle3").innerHTML = 'Mouse Out';
+        }
+        document.getElementById("circle3").onpointerout = function () {
+            document.getElementById("circle3").style.backgroundColor = "blue";
+            document.getElementById("circle3").innerHTML = 'Mouse In';
+        }
+
+    </script>
+</body>
+
+</html>
