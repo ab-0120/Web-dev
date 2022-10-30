@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Teasor | Game</title>
+
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(120deg, rgb(244, 240, 233), rgb(255, 227, 231));
+            text-align: center;
+        }
+
+        #text {
+            background-color: white;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #text #insert {
+            font-size: 30px;
+            color: brown;
+        }
+
+
+        #best {
+            background-color: white;
+            margin-top: 10px;
+            display: block;
+            padding: 10px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        #best #besttime {
+            font-size: 30px;
+            color: rgb(20, 129, 96);
+        }
+
+        #square {
+            height: 190px;
+            width: 190px;
+            background-color: cadetblue;
+            display: none;
+            position: relative;
+            cursor: pointer;
+        }
+
+        audio {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="text">Time taken: <span id="insert"></span> </p>
+
+    <p id="best">Best time: <span id="besttime"></span></p>
+
+    <audio controls autoplay id="sound">
+        <source src="click.wav" type="audio/mpeg">
+    </audio>
+
+    <div id="square"></div>
+
+    <script src="reaction.js"></script>
+
+</body>
+
+</html>
